@@ -1,0 +1,1033 @@
+// ●------Reset----●
+* {
+    margin: 0;
+    padding: 0; 
+}
+// ●------Reset----●
+
+html{
+	scroll-behavior: smooth;  
+}
+
+//================={ PC }=================
+@media(min-width: 992px){
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+    #Section__home{
+        @include Sections; 
+
+        .home__header{
+            height: 90px;
+            width: 100%;
+            position: fixed;
+            right: 0;
+            left: 0;
+            display: grid;
+            grid-template-areas: "header__RowH1 header__RowH2";
+            grid-template-columns: 3fr 6fr;
+
+
+//================== 𝗥𝗼𝘄𝗛𝟭 ==================
+            .header__RowH1{
+                grid-area: header__RowH1;
+                background-color: rgba(68, 68, 68, 0.5);
+                display: flex;
+                justify-content: center;
+
+                .RowH1__Logo{
+                    height: 80px;
+                    width: 200px;
+                    margin-top: 5px;
+                    border-radius: 20px;
+                    background-color: rgb(179, 74, 240);
+                }
+            }
+//================== 𝗥𝗼𝘄𝗛𝟭 ==================
+
+
+//================== 𝗥𝗼𝘄𝗛𝟮 ==================
+            .header__RowH2{
+                grid-area: header__RowH2;
+                background-color: rgba(109, 109, 109, 0.295);
+
+                    .RowH2__menu{
+                        list-style: none;
+                        display: flex;
+                        position: relative;
+                        top: 30px;
+
+                    .menu__list{
+                        //border: solid black 5px;
+                        display: inline-block;
+                        text-align: center;
+                        width: 180px;
+                        font-size: 18px;
+                        
+                        .link{
+                            @include Link; 
+                            color: rgb(255, 255, 255); 
+                            transition: all 0.5s;
+                        }
+
+                        .link:hover{
+                            @include Link;
+                            color: rgb(231, 135, 9);
+                        }
+                    }
+                } 
+            }
+//================== 𝗥𝗼𝘄𝗛𝟮 ==================
+        }
+
+        .home__headerMob{
+            display: none;
+        }
+
+        .home__dropdown{
+            display: none;
+        }
+
+        //●========● 𝗠𝗮𝗶𝗻 ●========●
+        .home__main{
+            @include Main; 
+        }
+        //●========● 𝗠𝗮𝗶𝗻 ●========●
+        
+    }
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+
+
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+    #Section__services{
+        height: 800px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .services__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+    #Section__products{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .products__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+    #Section__prices{
+        height: 760px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .prices__main{
+        @include Main;  
+        @include Bleeding;   
+
+        .main__TitlePrice{
+            font-size: 55px;
+        }
+
+        .main__Text{
+            font-size: 20px;
+        } 
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+    #Section__contact{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .contact__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+
+
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+}
+
+@media(min-width: 767px) and (max-width: 1425px){  // Rojo
+    // ##############################
+    // ------------𝐇𝐨𝐦𝐞------------
+    // ##############################
+        #Section__home{
+            @include Sections; 
+    
+            .home__header{
+                height: 90px;
+                width: 100%;
+                position: fixed;
+                right: 0;
+                left: 0;
+                display: grid;
+                grid-template-areas: "header__RowH1 header__RowH2";
+                grid-template-columns: 3fr 6fr;
+    
+    
+    //================== 𝗥𝗼𝘄𝗛𝟭 ==================
+                .header__RowH1{
+                    grid-area: header__RowH1;
+                    background-color: rgb(68, 68, 68);
+                    display: flex;
+                    justify-content: center;
+    
+                    .RowH1__Logo{
+                        height: 80px;
+                        width: 200px;
+                        margin-top: 5px;
+                        border-radius: 20px;
+                        background-color: rgb(241, 20, 20);
+                    }
+                }
+    //================== 𝗥𝗼𝘄𝗛𝟭 ==================
+    
+    
+    //================== 𝗥𝗼𝘄𝗛𝟮 ==================
+                .header__RowH2{
+                    grid-area: header__RowH2;
+                    background-color: rgb(109, 109, 109);
+    
+                        .RowH2__menu{
+                            list-style: none;
+                            display: flex;
+                            position: relative;
+                            top: 30px;
+    
+                        .menu__list{
+                            //border: solid black 5px;
+                            display: inline-block;
+                            text-align: center;
+                            width: 120px;
+                            font-size: 10px;
+                            
+                            .link{
+                                @include LinkTB; 
+                                color: rgb(255, 255, 255); 
+                                transition: all 0.5s;
+                            }
+    
+                            .link:hover{
+                                @include LinkTB;
+                                color: rgb(231, 135, 9);
+                            }
+                        }
+                    } 
+                }
+    //================== 𝗥𝗼𝘄𝗛𝟮 ==================
+            }
+
+            .home__headerMob{
+                display: none;
+            }
+
+            .home__dropdown{
+                display: none;
+            }
+
+            //●========● 𝗠𝗮𝗶𝗻 ●========●
+                .home__main{
+                    @include Main;  
+                }
+            //●========● 𝗠𝗮𝗶𝗻 ●========●
+        }
+    // ##############################
+    // ------------𝐇𝐨𝐦𝐞------------
+    // ##############################
+}
+//================={ PC }=================
+
+
+//================={ Tablet }=================  
+@media(min-width: 767px) and (max-width: 991px){    //Azul marino
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+#Section__home{
+    @include Sections; 
+
+    .home__header{
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        right: 0;
+        left: 0;
+        display: grid;
+        grid-template-areas: "header__RowH1 header__RowH2";
+        grid-template-columns: 3fr 6fr;
+
+
+//================== 𝗥𝗼𝘄𝗛𝟭 ==================
+        .header__RowH1{
+            grid-area: header__RowH1;
+            background-color: rgb(68, 68, 68);
+            display: flex;
+            justify-content: center;
+
+            .RowH1__Logo{
+                height: 80px;
+                width: 200px;
+                margin-top: 5px;
+                border-radius: 20px;
+                background-color: rgb(24, 5, 190);
+            }
+        }
+//================== 𝗥𝗼𝘄𝗛𝟭 ==================
+
+
+//================== 𝗥𝗼𝘄𝗛𝟮 ==================
+        .header__RowH2{
+            grid-area: header__RowH2;
+            background-color: rgb(109, 109, 109);
+
+                .RowH2__menu{
+                    list-style: none;
+                    display: flex;
+                    position: relative;
+                    top: 30px;
+
+                .menu__list{
+                    //border: solid black 5px;
+                    display: inline-block;
+                    text-align: center;
+                    width: 80px;
+                    font-size: 18px;
+                    
+                    .link{
+                        @include LinkTB; 
+                        color: rgb(255, 255, 255); 
+                        transition: all 0.5s;
+                    }
+
+                    .link:hover{
+                        @include LinkTB;
+                        color: rgb(231, 135, 9);
+                    }
+                }
+            } 
+        }
+//================== 𝗥𝗼𝘄𝗛𝟮 ==================
+    }
+
+    .home__headerMob{
+        display: none;
+    }
+
+    .home__dropdown{
+        display: none;
+    }
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .home__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+
+
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+    #Section__services{
+        height: 800px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .services__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+    #Section__products{
+        height: 800px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .products__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+    #Section__prices{
+        height: 730px;
+        width: 100%;  
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .prices__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+    #Section__contact{
+        height: 800px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .contact__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+
+
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+}
+//================={ Tablet }=================
+
+
+//================={ small mobiles }=================
+@media(min-width: 576px) and (max-width: 766px){   //verde
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+#Section__home{
+    @include Sections; 
+
+    .home__header{
+        display: none;
+    }
+
+    .home__headerMob{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: fixed;
+        left: 0;
+        right: 0;
+
+        .toggle-menu{
+            background-color: rgb(9, 255, 0);
+            cursor: pointer;
+            position: relative;
+            right: 15px;
+            margin-top: 14px;
+        }
+    }
+
+    .home__dropdown{
+        height: 255px;
+        width: 100%;
+        position: fixed;
+        top: 90px;
+        transition: transform 0.8s;
+        transform: translateY(-250%);
+
+        .dropdown__menu{
+            list-style: none;
+            //display: flex;
+            position: relative;
+            top: 20px;
+
+            .menu__list{
+                //border: solid black 5px;
+                //display: inline-block;
+                //text-align: center;
+                //width: 180px;
+                list-style: none;
+                height: 45px;
+                font-size: 18px;
+                
+                .link{
+                    @include Link; 
+                    color: rgb(255, 255, 255); 
+                    transition: all 0.5s;
+                }
+
+                .link:hover{
+                    @include Link;
+                    color: rgb(231, 135, 9);
+                }
+            }
+        }
+}
+
+.home__dropdown--show{
+    transform: translateY(0);
+}
+
+//●========● 𝗠𝗮𝗶𝗻 ●========●
+.home__main{
+    @include Main;  
+}
+//●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+
+
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+    #Section__services{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .services__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+    #Section__products{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .products__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+    #Section__prices{
+        height: 730px;
+        width: 100%;
+    
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .prices__main{
+        @include Main;  
+        @include Bleeding;   
+
+        .main__TitlePrice{
+            font-size: 55px;
+        }
+
+        .main__Text{
+            font-size: 20px;
+        } 
+    
+        .main__ContainerMobile{
+            display: flex;
+            justify-content: center;
+
+        .main__IframePrice{
+            height: 315px;
+            width: 460px;
+        }
+    }
+
+
+    .main__ContainerMobile2{
+        display: flex;
+        justify-content: center;
+
+        .IMG__Odoo{
+            width: 500px;
+        }
+    }
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+    #Section__contact{
+        height: 900px;
+        width: 100%;
+    
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .contact__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+
+
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+}
+//================={ small mobiles }=================
+
+
+//================={ very small mobiles }=================
+@media(min-width: 477px) and (max-width: 577px){    //Naranja
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+#Section__home{
+    @include Sections; 
+
+    .home__header{
+        display: none;
+    }
+
+    .home__headerMob{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: fixed;
+        left: 0;
+        right: 0;
+
+        .toggle-menu{
+            background-color: rgb(245, 182, 8);
+            cursor: pointer;
+            position: relative;
+            right: 15px;
+            margin-top: 14px;
+        }
+    }
+
+    .home__dropdown{
+        height: 255px;
+        width: 100%;
+        position: fixed;
+        top: 90px;
+        transition: transform 0.8s;
+        transform: translateY(-250%);
+
+        .dropdown__menu{
+            list-style: none;
+            //display: flex;
+            position: relative;
+            top: 20px;
+
+            .menu__list{
+                //border: solid black 5px;
+                //display: inline-block;
+                //text-align: center;
+                //width: 180px;
+                list-style: none;
+                height: 45px;
+                font-size: 18px;
+                
+                .link{
+                    @include Link; 
+                    color: rgb(255, 255, 255); 
+                    transition: all 0.5s;
+                }
+
+                .link:hover{
+                    @include Link;
+                    color: rgb(231, 135, 9);
+                }
+            }
+        }
+}
+
+.home__dropdown--show{
+    transform: translateY(0);
+}
+
+//●========● 𝗠𝗮𝗶𝗻 ●========●
+.home__main{
+    @include Main;  
+}
+//●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+
+
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+    #Section__services{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .services__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+    #Section__products{
+        height: 800px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .products__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+    #Section__prices{
+        height: 700px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .prices__main{
+        @include Main;  
+        @include Bleeding;   
+
+        .main__TitlePrice{
+            font-size: 55px;
+        }
+
+        .main__Text{
+            font-size: 20px;
+        } 
+    
+        .main__ContainerMobile{
+            display: flex;
+            justify-content: center;
+
+        .main__IframePrice{
+            height: 315px;
+            width: 460px;
+        }
+    }
+
+
+    .main__ContainerMobile2{
+        display: flex;
+        justify-content: center;
+
+        .IMG__Odoo{
+            width: 440px;
+        }
+    }
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+    #Section__contact{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .contact__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+
+
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+}
+
+@media (max-width: 476px){     //Blanco    //Tamaño límite 324px
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+#Section__home{
+    @include Sections; 
+
+    .home__header{
+        display: none;
+    }
+
+    .home__headerMob{
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        position: fixed;
+        left: 0;
+        right: 0;
+
+        .toggle-menu{
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            position: relative;
+            right: 15px;
+            margin-top: 14px;
+        }
+    }
+
+    .home__dropdown{
+        height: 255px;
+        width: 100%;
+        position: fixed;
+        top: 90px;
+        transition: transform 0.8s;
+        transform: translateY(-250%);
+
+        .dropdown__menu{
+            list-style: none;
+            //display: flex;
+            position: relative;
+            top: 20px;
+
+            .menu__list{
+                //border: solid black 5px;
+                //display: inline-block;
+                //text-align: center;
+                //width: 180px;
+                list-style: none;
+                height: 45px;
+                font-size: 18px;
+                
+                .link{
+                    @include Link; 
+                    color: rgb(255, 255, 255); 
+                    transition: all 0.5s;
+                }
+
+                .link:hover{
+                    @include Link;
+                    color: rgb(231, 135, 9);
+                }
+            }
+        }
+}
+
+.home__dropdown--show{
+    transform: translateY(0);
+}
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .home__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐇𝐨𝐦𝐞------------
+// ##############################
+
+
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+    #Section__services{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .services__main{
+        @include Main;  
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬------------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+    #Section__products{
+        @include Sections; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .products__main{
+        height: 800px;
+        width: 100%; 
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+    #Section__prices{
+        height: 680px;
+        width: 100%; 
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .prices__main{
+        @include Main;  
+        @include Bleeding;   
+
+        .main__TitlePrice{
+            font-size: 45px;
+        }
+
+        .main__Text{
+            font-size: 20px;
+        } 
+    
+        .main__ContainerMobile{
+            display: flex;
+            justify-content: center;
+
+        .main__IframePrice{
+            height: 315px;
+            width: 460px;
+        }
+    }
+
+
+    .main__ContainerMobile2{
+        display: flex;
+        justify-content: center;
+
+        .IMG__Odoo{
+            width: 310px;
+        }
+    }
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐏𝐫𝐢𝐜𝐞𝐬-----------
+// ##############################
+
+
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+    #Section__contact{
+        height: 800px;
+        width: 100%;
+
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+    .contact__main{
+        @include Main; 
+        @include Bleeding;  
+
+        .main__TitleContact{
+            font-size: 46px;
+        }
+    }
+    //●========● 𝗠𝗮𝗶𝗻 ●========●
+}
+// ##############################
+// ------------𝐂𝐨𝐧𝐭𝐚𝐜𝐭-----------
+// ##############################
+
+
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+// ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============
+}
+//================={ very small mobiles }=================

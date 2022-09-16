@@ -1,0 +1,45 @@
+//-------------MixinBg------------
+@mixin Bg{          //@include Bg;              
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+//-------------MixinBg------------
+
+//-------------MixinSections------------
+@mixin Sections{     //@include Sections;                  
+    height: 100vh;
+    width: 100%;
+}
+//-------------MixinSections------------
+
+//-------------MixinLink------------
+@mixin Link{        //@include Link;                  
+    text-decoration: none;
+    font-family: "FontCoolv";
+    font-size: 20px;
+}
+//-------------MixinLink------------
+
+//-------------MixinLinkTB------------
+@mixin LinkTB{        //@include LinkTB;                  
+    text-decoration: none;
+    font-family: "FontCoolv";
+    font-size: 18px;
+}
+//-------------MixinLink------------
+
+//-------------MixinLinkTB------------
+@mixin Main{        //@include Main;                  
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(142, 255, 240, 0.336);
+}
+//-------------MixinLink------------
+
+//-------------MixinBleeding------------
+@mixin Bleeding{        //@include Bleeding;                  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+//-------------MixinBleeding------------
