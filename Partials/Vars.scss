@@ -1,0 +1,293 @@
+$ColorSections:(     
+    Home: rgba(255, 255, 255, 0),                                                                       //map-get($ColorSections, Home)
+    Services: linear-gradient(to bottom, rgba(196, 196, 196, 0.63), rgb(255, 255, 255)) 70%,         //map-get($ColorSections, Services)
+    Products: rgba(255, 255, 255, 0),                                                                  //map-get($ColorSections, Products)
+    Prices: linear-gradient(to top, rgba(187, 187, 187, 0.37) 50%, rgb(255, 255, 255)),             //map-get($ColorSections, Prices)
+    Contact: linear-gradient(to bottom, rgba(187, 187, 187, 0.37) 20%, rgb(255, 255, 255) 50%)      //map-get($ColorSections, Contact)
+);
+
+
+//-------------MixinBg------------
+@mixin Bg{          //@include Bg;              
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+//-------------MixinBg------------
+
+//-------------MixinSections------------
+@mixin Sections{     //@include Sections;                  
+    height: 100vh;
+    width: 100%;
+}
+//-------------MixinSections------------
+
+//-------------MixinLink------------
+@mixin Link{        //@include Link;                  
+    text-decoration: none;
+    font-family: "FontCoolv";
+    font-size: 20px;
+}
+//-------------MixinLink------------
+
+//-------------MixinLinkTB------------
+@mixin LinkTB{        //@include LinkTB;                  
+    text-decoration: none;
+    font-family: "FontCoolv";
+    font-size: 18px;
+}
+//-------------MixinLink------------
+
+//-------------MixinLinkTB------------
+@mixin Main{        //@include Main;                  
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(142, 255, 240, 0);
+}
+//-------------MixinLink------------
+
+//-------------MixinBleeding------------
+@mixin Bleeding{        //@include Bleeding;                  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+//-------------MixinBleeding------------
+
+//-------------VarsHome-------------
+$RowH1:(     //map-get($RowH1, Row1);
+    Row1: rgba(80, 81, 82, 0.699)
+);
+
+$RowH2:(    ////map-get($RowH2, Row2);
+    Row2: rgba(133, 133, 133, 0.425)
+);
+//-------------VarsHome-------------
+
+//-------------VarsProducts-------------
+$IMGProducts:(  //map-get($IMGProducts, IMG); 
+    IMG: rgb(0, 102, 255)
+);
+
+$TextProducts:(  //map-get($TextProducts, TEXT);
+    TextP: rgba(255, 0, 0, 0)
+);
+
+$ContainersProducts:(    //map-get($ContainersProducts, Cuadros);
+    Cuadros: rgba(0, 0, 0, 0)
+);
+//-------------VarsProducts-------------
+
+//-------------VarsServices-------------
+$ContainerServices:(
+    Container: rgba(77, 76, 76, 0)  //map-get($ContainerServices, Container);
+);
+
+$Row1:(     //map-get($Row1, Row1);
+    Row1: rgba(33, 90, 245, 0)
+);
+
+$Row2:(    ////map-get($Row2, Row2);
+    Row2: rgba(94, 135, 248, 0)
+);
+
+@mixin SectionsServices{        //@include SectionsServices;                  
+    height: 250px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.712);
+    border: solid black;
+    border-width: 0px 0px 0px 0px;
+} 
+
+@mixin SectionsServicesTB{        //@include SectionsServicesTB;                  
+    height: 230px;
+    width: 230px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+}
+
+@mixin SectionsServicesMB{        //@include SectionsServicesMB;                  
+    height: 230px;
+    width: 230px;
+    background-color: rgb(255, 255, 255);
+    //border: 5px solid black;  //Primero: Arriba   Segundo: Izquierda     Tercero: Abajo     Cuarto: Derecha
+}
+
+@mixin ColorBorders{ //@include ColorBorder;                  
+    border: solid rgb(214, 214, 214);
+}
+
+@mixin Borders1{    //@include Borders1
+    @include ColorBorders; 
+    border-width: 0px 2px 2px 0px;
+}
+
+@mixin Borders2{    //@include Borders2
+    @include ColorBorders; 
+    border-width: 0px 0px 2px 0px;
+}
+
+@mixin Borders3{    //@include Borders3
+    @include ColorBorders; 
+    border-width: 0px 2px 0px 0px;
+}
+
+@mixin Borders4{    //@include Borders4
+    @include ColorBorders; 
+    border-width: 0px 0px 0px 0px;
+}
+
+
+
+@mixin BordersMB1{    //@include BordersMB1;
+    @include ColorBorders; 
+    border-width: 0px 2px 2px 0px;
+}
+
+@mixin BordersMB2{    //@include BordersMB2;
+    @include ColorBorders; 
+    border-width: 0px 0px 2px 0px;
+}
+
+@mixin BordersMB3{    //@include BordersMB3;
+    @include ColorBorders; 
+    border-width: 0px 0px 0px 2px;
+}
+
+@mixin BordersMB4{    //@include BordersMB4;
+    @include ColorBorders; 
+    border-width: 0px 2px 0px 0px;
+}
+
+@mixin BordersMB5{    //@include BordersMB4;
+    @include ColorBorders; 
+    border-width: 0px 0px 0px 0px;
+}
+
+
+@mixin BordersXS1{   //@include BordersXS1;
+    border-width: 4px 4px 4px 4px;  //Primero: Arriba   Segundo: Izquierda     Tercero: Abajo     Cuarto: Derecha
+    border-style: solid;
+    border-color: rgb(214, 214, 214); 
+}
+
+@mixin BordersXS2{   //@include BordersXS2;
+    border-width: 0px 4px 4px 4px;  //Primero: Arriba   Segundo: Izquierda     Tercero: Abajo     Cuarto: Derecha
+    border-style: solid;
+    border-color: rgb(214, 214, 214); 
+}
+
+@mixin IMGServices{  //@include IMGServices;
+    height: 50px;
+    width: 50px;
+    filter: invert(65%) sepia(10%) saturate(159%) hue-rotate(179deg) brightness(89%) contrast(85%);
+    background-color: rgba(22, 113, 187, 0);
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+@mixin TextServices{  //@include TextServices;
+    height: 50px;
+    width: 220px;
+    background-color: rgba(228, 41, 41, 0);
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+@mixin IMGServicesTB{  //@include IMGServicesTB;
+    height: 50px;
+    width: 50px;
+    filter: invert(65%) sepia(10%) saturate(159%) hue-rotate(179deg) brightness(89%) contrast(85%);
+    background-color: rgba(22, 113, 187, 0);
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+
+@mixin TextServicesTB{  //@include TextServicesTB;
+    height: 50px;
+    width: 200px;
+    background-color: rgba(228, 41, 41, 0);
+    position: relative;
+    left: 10px;
+    top: 50px;
+}
+
+@mixin TextContainerServices{  //@include TextContainerServices;
+    font-size: 21px;
+    text-align: left;
+    color: rgb(58, 57, 57);
+}
+
+@mixin TextContainerServicesMB{  //@include TextContainerServicesMB;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(58, 57, 57);
+}
+
+@mixin TranslateIMG{ //@include TranslateIMG;
+    transform: translateY(-20px);
+}
+
+@mixin TranslateTEXT{ //@include TranslateTEXT;
+    transform: translateY(-21px);
+}
+//-------------VarsServices-------------
+
+//-------------VarsContact-------------
+$ContainerCont:(    //map-get($ContainerCont, ContainerContXS);
+    ContainerCont: rgba(87, 87, 87, 0),
+    ContainerContXS: rgb(245, 139, 139)
+);
+
+@mixin SectionCont{  //@include SectionCont;                  
+    height: 160px;
+    width: 160px;
+    //border-radius: 40px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-color: rgb(245, 139, 139);
+    //border-radius: 20px;
+}
+
+@mixin IMGCont{ //@include IMGCont; 
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 32px;
+    background-color: #068dbe;
+}
+
+@mixin IMGContMB{ //@include IMGCont; 
+    height: 150px;
+    width: 150px;
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 32px;
+    background-color: #068dbe;
+}
+
+@mixin IconsCont{   //@include IconsCont;  
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@mixin TextCont{        //@include TextCont;  
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    //position: relative;
+    //right: 30px;
+    //margin-right: 90px;
+}
+
+@mixin TextContXS{        //@include TextContXS;  
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    position: relative;
+    right: 13px;
+}
+//-------------VarsContact-------------
+
