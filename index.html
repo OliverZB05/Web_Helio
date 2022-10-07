@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <title>TV Setup</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/ef8b0fa8d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐇𝐨𝐦𝐞⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+<section id="Section__home">
+    
+    <!-- ================= Header PC and tablet-================= -->
+        <header class="home__header" style="background-color: rgba(128, 128, 128, 0.418);">
+    
+    
+        <div class="header__RowH1">
+            <div class="RowH1__Logo"></div>
+        </div>
+
+
+        <div class="header__RowH2">
+            <div class="RowH2__menu">
+                <nav>
+                <ul>
+                    <li class="menu__list"><a href="#Section__home" class="link">Home</a></li>
+                    <li class="menu__list"><a href="#Section__services" class="link">Servicios</a></li>
+                    <li class="menu__list"><a href="#Section__products" class="link">Productos</a></li>
+                    <li class="menu__list"><a href="#Section__prices" class="link">Precios</a></li>
+                    <li class="menu__list"><a href="#Section__contact" class="link">Contacto</a></li>
+                </ul>
+            </nav>
+            </div> 
+        </div> 
+
+        </header> 
+    <!-- ================= Header PC and tablet ================= -->
+
+
+    <!-- ================= Header Mobile ================= -->
+        <header class="home__headerMob" style="background-color: rgba(95, 156, 247, 0.411);">
+
+            <!-- <div class="headerMob__FlexStart"> -->
+            <!-- </div> -->
+            <!-- <div id="toggle-menu" class="toggle-menu"><img src="./IMG/IMG__Header/Menu.png" alt=""></div> -->
+
+            <div class="headerMob__RowH1">
+                <div class="RowH1__Logo"></div>
+            </div>
+            
+            <div class="headerMob__RowH2">
+                <div id="toggle-menu" class="toggle-menu"><img src="./IMG/IMG__Header/Menu.png" alt=""></div>
+            </div>
+        </header>
+        <div class="home__dropdown" id="dropdown" style="background-color: rgba(64, 64, 65, 0.644);">
+
+            <div class="dropdown__menu">
+                <nav>
+                <ul>
+                    <li class="menu__list"><a href="#Section__home" class="link">Home</a></li>
+                    <li class="menu__list"><a href="#Section__services" class="link">Servicios</a></li>
+                    <li class="menu__list"><a href="#Section__products" class="link">Productos</a></li>
+                    <li class="menu__list"><a href="#Section__prices" class="link">Precios</a></li>
+                    <li class="menu__list"><a href="#Section__contact" class="link">Contacto</a></li>
+                </ul>
+            </nav>
+            </div> 
+
+        </div>
+    <!-- ================= Header Mobile ================= -->
+
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+    <main class="home__main">
+        <!-- <div class="main__HiddenSpace" style="height: 90px; width:100%; background-color: rgba(75, 173, 230, 0);"></div> --> <!-- Este es el espacio de cada sección que no se ve -->
+            
+        <!-- ============= 𝗖𝗮𝗿𝗿𝘂𝘀𝗲𝗹 ============= -->
+        <div id="ContentCarousel">
+            <div class="itemCarousel" id="itemCarousel-1">
+                <div class="CardCarousel" id="CardCarousel-1">
+
+                    <div class="ContainerFlexbox-1">
+                        <div class="ContainerText-1"></div>
+                    </div>
+                    <!-- <h1 class="CarouselTitle-1">TODO EL ENTRETENIMIENTO A TU ALCANCE</h1>
+                    <h2 class="CarouselSubTitle-1">Muchas opciones para escoger, muchos canales que ver</h2> -->
+                    <!-- A -->
+                    <div class="ContainerGrid">
+                        <div class="SpaceIMG"></div>
+                    </div>
+
+                </div>
+                <div class="arrowCarousel">
+                    <a href="#CardCarousel-4" class="Anchor"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#CardCarousel-2" class="Anchor"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="itemCarousel" id="itemCarousel-2"> <!-- Copia del anterior Item-->
+                <div class="CardCarousel" id="CardCarousel-2">
+
+                    <!-- <h1 class="CarouselTitle-2">CANALES DE MUCHOS PAÍSES EN UN SOLO SERVICIO</h1>
+                    <h2 class="CarouselSubTitle-2">Canales de Alemania, Italia, Francia, Inglaterra, Irlanda, Polonia y más ....</h2> -->
+                    <!-- B -->
+                    <div class="ContainerGrid">
+                        <div class="SpaceIMG"></div>
+                    </div>
+
+                </div>
+                <div class="arrowCarousel">
+                    <a href="#CardCarousel-1" class="Anchor"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#CardCarousel-3" class="Anchor"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="itemCarousel" id="itemCarousel-3"> <!-- Copia del anterior Item-->
+                <div class="CardCarousel" id="CardCarousel-3">
+
+                    <!-- <h1 class="CarouselTitle-3">MONTATE EN LA OLA DEL ENTRETENIMIENTO</h1>
+                    <h2 class="CarouselSubTitle-3">Disfruta de todos los canales del deporte</h2> -->
+                    <!-- C -->
+                    <div class="ContainerGrid">
+                        <div class="SpaceIMG"></div>
+                    </div>
+
+                </div>
+                <div class="arrowCarousel">
+                    <a href="#CardCarousel-2" class="Anchor"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#CardCarousel-4" class="Anchor"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <div class="itemCarousel" id="itemCarousel-4"> <!-- Copia del anterior Item-->
+                <div class="CardCarousel" id="CardCarousel-4">
+
+                    <!-- <h1 class="CarouselTitle-4">LAS BUENAS COMPAÑIAS EN EL MEJOR MOMENTO</h1> -->
+                    <!-- D -->
+                    <div class="ContainerGrid">
+                        <div class="SpaceIMG"></div>
+                    </div>
+
+                </div>
+                <div class="arrowCarousel">
+                    <a href="#CardCarousel-3" class="Anchor"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#CardCarousel-1" class="Anchor"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ============= 𝗖𝗮𝗿𝗿𝘂𝘀𝗲𝗹 ============= -->
+    </main>
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+
+</section> <!-- Home -->
+<div class="home__HiddenSpace"></div>
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐇𝐨𝐦𝐞⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+
+
+
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+<!-- <div class="main__HiddenSpace2" style="height: 90px; width:100%; background-color: rgb(0, 0, 0);"></div> --> <!-- Este es el espacio de cada sección que no se ve -->
+<section id="Section__services">
+    <!-- <div class="main__HiddenSpace2A"></div> -->
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+    <main class="services__main">
+        <div class="main__HiddenSpace2A"></div>
+        <div class="SeparatorServices"></div>
+        <h1 class="main__TitleServices">Servicios</h1>
+        <p class="main__Text">Ponemos a su disposición muchos años de experiencia y profesionalismo en cada servicio ofrecido</p>
+
+    <!-- =========== ContainerServices =========== -->
+        <div class="main__ContainerServices">
+            <div class="ContainerServices__Row1">
+                <div class="Row1__Section1">
+                    <div class="Section1__IMG-1"></div>
+                    <div class="Section1__Text-1">
+                        <h2 class="TextContainerServices">Ajuste de instalación de antenas TDT</h2>
+                    </div>
+                </div>
+
+                <div class="Row1__Section2">
+                    <div class="Section2__IMG-1"></div>
+                    <div class="Section2__Text-1">
+                        <h2 class="TextContainerServices">Instalación de antenas parabolicas</h2>
+                    </div>
+                </div>
+
+                <div class="Row1__Section3">
+                    <div class="Section3__IMG-1"></div>
+                    <div class="Section3__Text-1">
+                        <h2 class="TextContainerServices">Canales de muchos países</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerServices__Row2">
+                <div class="Row2__Section1">
+                    <div class="Section1__IMG-2"></div>
+                    <div class="Section1__Text-2">
+                        <h2 class="TextContainerServices">Eliminamos interferencias o fallas de señal</h2>
+                    </div>
+                </div>
+
+                <div class="Row2__Section2">
+                    <div class="Section2__IMG-2"></div>
+                    <div class="Section2__Text-2">
+                        <h2 class="TextContainerServices">Agregar puntos de TV</h2>
+                    </div>
+                </div>
+
+                <div class="Row2__Section3">
+                    <div class="Section3__IMG-2"></div>
+                    <div class="Section3__Text-2">
+                        <h2 class="TextContainerServices">Reparación de fallas de antenas y televisores</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- =========== ContainerServices =========== -->
+
+    <!-- =========== ContainerServicesMB =========== -->
+        <div class="main__ContainerServicesMB">
+            <div class="ContainerServicesMB__Row1MB">
+
+                <div class="Row1MB__Section1">
+                    <div class="Section1__IMG-1"></div>
+                    <div class="Section1__Text-1">
+                        <h2 class="TextContainerServicesMB">Ajuste de instalación de antenas TDT</h2>
+                    </div>
+                </div>
+
+                <div class="Row1MB__Section2">
+                    <div class="Section2__IMG-1"></div>
+                    <div class="Section2__Text-1">
+                        <h2 class="TextContainerServicesMB">Instalación de antenas parabolicas</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ContainerServicesMB__Row2MB">
+
+                <div class="Row2MB__Section1">
+                    <div class="Section1__IMG-2"></div>
+                    <div class="Section1__Text-2">
+                        <h2 class="TextContainerServicesMB">Canales de muchos países</h2>
+                    </div>
+                </div>
+
+                <div class="Row2MB__Section2">
+                    <div class="Section2__IMG-2"></div>
+                    <div class="Section2__Text-2">
+                        <h2 class="TextContainerServicesMB">Eliminamos interferencias o fallas de señal</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ContainerServicesMB__Row3MB">
+
+                <div class="Row3MB__Section1">
+                    <div class="Section1__IMG-3"></div>
+                    <div class="Section1__Text-3">
+                        <h2 class="TextContainerServicesMB">Agregar puntos de TV</h2>
+                    </div>
+                </div>
+
+                <div class="Row3MB__Section2">
+                    <div class="Section2__IMG-3"></div>
+                    <div class="Section2__Text-3">
+                        <h2 class="TextContainerServicesMB">Reparación de fallas de antenas y televisores</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- =========== ContainerServicesMB =========== -->
+
+    <!-- =========== ContainerServicesMB-XS =========== -->
+        <div class="main__ContainerServicesMB-XS">
+            <div class="ContainerServicesMB-XS__Row1XS">
+                <div class="Row1XS__Section">
+                    <div class="Section__IMG-1"></div>
+                    <div class="Section__Text-1">
+                        <h2 class="TextContainerServicesXS">Ajuste de instalación de antenas TDT</h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ContainerServicesMB-XS__Row2XS">
+                <div class="Row2XS__Section">
+                    <div class="Section__IMG-2"></div>
+                    <div class="Section__Text-2">
+                        <h2 class="TextContainerServicesXS">Instalación de antenas parabolicas</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerServicesMB-XS__Row3XS">
+                <div class="Row3XS__Section">
+                    <div class="Section__IMG-3"></div>
+                    <div class="Section__Text-3">
+                        <h2 class="TextContainerServicesXS">Canales de muchos países</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerServicesMB-XS__Row4XS">
+                <div class="Row4XS__Section">
+                    <div class="Section__IMG-4"></div>
+                    <div class="Section__Text-4">
+                        <h2 class="TextContainerServicesXS">Eliminamos interferencias o fallas de señal</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerServicesMB-XS__Row5XS">
+                <div class="Row5XS__Section">
+                    <div class="Section__IMG-5"></div>
+                    <div class="Section__Text-5">
+                        <h2 class="TextContainerServicesXS">Agregar puntos de TV</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerServicesMB-XS__Row6XS">
+                <div class="Row6XS__Section">
+                    <div class="Section__IMG-6"></div>
+                    <div class="Section__Text-6">
+                        <h2 class="TextContainerServicesXS">Reparación de fallas de antenas y televisores</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- =========== ContainerServicesMB-XS =========== -->
+    </main>
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+</section> <!-- Servicios -->
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+
+
+
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+<section id="Section__products">
+
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+    <main class="products__main">
+        <div class="main__HiddenSpace" style="height: 90px; width:100%; background-color: rgba(0, 0, 0, 0);"></div> <!-- Este es el espacio de cada sección que no se ve -->
+
+        <h1 class="main__TitleProducts">Todo integrado en una sola solución</h1>
+        <p class="main__Text">Por ser un sistema modular podemos ir incorporando soluciones a medida de los avances y las necesidades de nuestros clientes</p><br>
+
+        <div class="main__ContainerFlexProducts">
+
+            <div class="ContainerFlexProducts__Container1">
+                <div class="main__IMGProducts1"></div>
+                <div class="main__TextProducts1">
+                    <h3 class="TextProducts1__Text">Controla y aunmenta tus finanzas</h3>
+                </div>
+            </div>
+
+            <div class="ContainerFlexProducts__Container2">
+                <div class="main__IMGProducts2"></div>
+                <div class="main__TextProducts2">
+                    <h3 class="TextProducts2__Text">Toma decisiones basado en indicadores</h3>
+                </div>
+            </div>
+
+            <div class="ContainerFlexProducts__Container3">
+                <div class="main__IMGProducts3"></div>
+                <div class="main__TextProducts3">
+                    <h3 class="TextProducts3__Text">Crea nuevas oportunidades</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+</section> <!-- Productos -->
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐏𝐫𝐨𝐝𝐮𝐜𝐭𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+
+
+
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐏𝐫𝐢𝐜𝐞𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+<section id="Section__prices">
+
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+    <main class="prices__main">
+        <div class="main__HiddenSpace" style="height: 90px; width:100%; background-color: rgba(0, 0, 0, 0);"></div> <!-- Este es el espacio de cada sección que no se ve -->
+
+        <div class="SeparatorPrice-1"></div>
+        <h1 class="main__TitlePrice">Odoo partner</h1>
+        <p class="main__Text">Conoce las novedades de odoo 14</p><br>
+
+        <div class="main__ContainerMobile">
+        <iframe width="560" height="315" class="main__IframePrice" src="https://www.youtube.com/embed/1SMm2VHXv1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        </div>
+
+        <div class="main__ContainerMobile2">
+        <img src="./IMG/IMG__Prices/Logo_Odoo.png" class="IMG__Odoo" alt=""> 
+        </div>
+        
+        <div class="SeparatorPrice-2"></div>
+    </main>
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+</section> <!-- Precios -->
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐏𝐫𝐢𝐜𝐞𝐬⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+
+
+
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐂𝐨𝐧𝐭𝐚𝐜𝐭⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+<section id="Section__contact">
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+    <main class="contact__main">
+    <div class="main__HiddenSpace" style="height: 90px; width:100%; background-color: rgba(0, 0, 0, 0);"></div> 
+
+        <h1 class="main__TitleContact">España</h1>
+        <h2 class="main__SubTitleContact">Contacto:</h2>
+
+        <div class="main__ContactRow">
+            <div class="ContactRow__Row1" style="background-color: rgba(194, 194, 194, 0);">
+                <div class="Row1__ColumnContact1" style="background-color: rgba(255, 0, 0, 0);">
+                    <div class="ColumnContact1__Icon1"></div> 
+                </div>
+                <div class="Row1__ColumnContact2" style="background-color: rgba(95, 159, 185, 0);">
+                    <p class="ColumnContact2__TextCont1">(0034) 644 488 519</p>  
+                </div>
+            </div>
+
+
+            <div class="ContactRow__Row2" style="background-color: rgba(128, 128, 128, 0);">
+                <div class="Row2__ColumnContact1" style="background-color: rgba(202, 7, 7, 0);">
+                    <div class="ColumnContact1__Icon2"></div> 
+                </div>
+                <div class="Row2__ColumnContact2" style="background-color: rgba(77, 131, 153, 0);">
+                    <p class="ColumnContact2__TextCont2">info@tvsetup.es</p> 
+                </div>
+            </div>
+        </div>
+
+
+    <!-- ============ FlexCenterCont ============ -->
+        <div class="main__FlexCenterCont">
+            <div class="FlexCenterCont__ContainerCont">
+                <!-- <div class="ContainerCont__Section1"></div> 
+                <div class="ContainerCont__Section2"></div>
+                <div class="ContainerCont__Section3"></div>
+                <div class="ContainerCont__Section4"></div> -->
+                <img src="./IMG/IMG__Contact/Arroba.png" alt="" class="IMGCont-1">
+                <img src="./IMG/IMG__Contact/Correo.png" alt="" class="IMGCont-2">
+                <img src="./IMG/IMG__Contact/Telefono.png" alt="" class="IMGCont-3">
+                <img src="./IMG/IMG__Contact/Ubicacion.png" alt="" class="IMGCont-4">
+            </div> 
+        </div>
+    <!-- ============ FlexCenterCont ============ -->
+
+    <!-- ============ FlexCenterContMB ============ -->
+        <div class="main__FlexCenterContMB">
+            <div class="FlexCenterContMB__ContainerContMB1">
+                <!-- <div class="ContainerContMB1__Section1"></div> 
+                <div class="ContainerContMB1__Section2"></div> -->
+                <img src="./IMG/IMG__Contact/Arroba.png" alt="" class="IMGCont-1">
+                <img src="./IMG/IMG__Contact/Correo.png" alt="" class="IMGCont-2">
+            </div> 
+
+            <div class="FlexCenterContMB__ContainerContMB2">
+                <!-- <div class="ContainerContMB2__Section3"></div>
+                <div class="ContainerContMB2__Section4"></div> -->
+                <img src="./IMG/IMG__Contact/Telefono.png" alt="" class="IMGCont-3">
+                <img src="./IMG/IMG__Contact/Ubicacion.png" alt="" class="IMGCont-4">
+            </div> 
+        </div>
+    <!-- ============ FlexCenterContMB ============ -->
+
+    <!-- ============ FlexCenterContXS ============ -->
+        <div class="main__FlexCenterContXS" style="background-color: rgba(128, 128, 128, 0);">
+            <!-- <div class="FlexCenterContXS__ContainerContXS1"></div> 
+
+            <div class="FlexCenterContXS__ContainerContXS2"></div>
+
+            <div class="FlexCenterContXS__ContainerContXS3"></div>
+
+            <div class="FlexCenterContXS__ContainerContXS4"></div> -->
+            <img src="./IMG/IMG__Contact/Arroba.png" alt="" class="IMGCont-1">
+                <img src="./IMG/IMG__Contact/Correo.png" alt="" class="IMGCont-2">
+                <img src="./IMG/IMG__Contact/Telefono.png" alt="" class="IMGCont-3">
+                <img src="./IMG/IMG__Contact/Ubicacion.png" alt="" class="IMGCont-4">
+        </div>
+<!-- ============ FlexCenterContXS ============ -->
+    </main>
+    <!-- ●========● 𝗠𝗮𝗶𝗻 ●========● -->
+</section> <!-- Contacto -->
+<!-- ################################################################## -->
+<!-- ⸻----⸻⸻----⸻𝐂𝐨𝐧𝐭𝐚𝐜𝐭⸻----⸻----⸻⸻ -->
+<!-- ################################################################## -->
+
+<!-- ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============ -->
+<footer class="footer" style="background-color: rgb(187, 187, 187);"></footer>
+<!-- ============ 𝙁𝙤𝙤𝙩𝙚𝙧 ============ -->
+
+<script type="text/javascript" src="./JS/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+</html>
